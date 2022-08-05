@@ -37,7 +37,7 @@
     <!-- Navbar -->
     <?php include "header.php" ?>
     <!-- Header Banner -->
-    <div class="banner-header2 section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="img/banner.jpg">
+    <div class="banner-header2 section-padding valign bg-img bg-fixed" data-overlay-dark="3" data-background="uploads/slidebanner/t-shirtbanner.png">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 caption mt-90">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Blog -->
     <section class="product section-padding bg-green">
         <div class="container">
@@ -111,11 +112,11 @@
                 <div class="col-md-12">
                             <!-- Pagination -->
                             <ul class="blog-pagination-wrap align-center">
-                                <li><a href="blog.html"><i class="ti-angle-left"></i></a></li>
-                                <li><a href="blog.html">1</a></li>
-                                <li><a href="blog.html" class="active">2</a></li>
-                                <li><a href="blog.html">4</a></li>
-                                <li><a href="blog.html"><i class="ti-angle-right"></i></a></li>
+                                <li><a href="#"><i class="ti-angle-left"></i></a></li>
+                                <li><a href="#">1</a></li>
+                                <li><a href="#" class="active">2</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#"><i class="ti-angle-right"></i></a></li>
                             </ul>
                         </div>
             </div>

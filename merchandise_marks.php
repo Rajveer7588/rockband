@@ -63,7 +63,7 @@
                 <div class="col-12">
                     <div class="list"><ul>
                         <li><a href="index.php">Home<a><span class="icon-bar"><i class="ti-angle-right"></i></span></li>
-                        <li><a href="marchandise.php">ProductCategory</a><span class="icon-bar"><i class="ti-angle-right"></i></span></li>
+                        <li><a href="merchandise.php">ProductCategory</a><span class="icon-bar"><i class="ti-angle-right"></i></span></li>
                         <li>Product name</li>
                     </ul></div>
                 </div>
@@ -79,28 +79,46 @@
                         <div class="col-md-12">
                             <div class="item">
                                 <div class="post-img">
-                                    <a href="post.html"> <img src="img/slider/18.jpg" alt=""> </a>
+                                    <a href="#"> <img src="img/slider/18.jpg" alt=""> </a>
                                 </div>
                                 <div class="post-cont"> 
                                    <span class="category">12 Dec 2022 in <a href="#">Trouwtips</a></span>
                                     <h5><a href="post.html">5 Tips On How To Be The Best Groomsman Ever</a></h5>
                                     <div class="">
                                         <div class="tab">
-                                            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                                            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                                            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Overview')">Overview</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Color')">Color</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Imprint')">Imprint</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Themes')">Themes</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Options')">Options</button>
+                                            <button class="tablinks" onclick="openCity(event, 'Delivery')">Delivery</button>
                                         </div>
-                                        <div id="London" class="tabcontent">
+                                        <div id="Overview" class="tabcontent">
                                             <h3>London</h3>
                                             <p>London is the capital city of England.</p>
                                         </div>
 
-                                        <div id="Paris" class="tabcontent">
+                                        <div id="Color" class="tabcontent">
+                                            <h3>London</h3>
+                                            <p>London is the capital city of England.</p>
+                                        </div>
+
+                                        <div id="Imprint" class="tabcontent">
+                                            <h3>London</h3>
+                                            <p>London is the capital city of England.</p>
+                                        </div>
+
+                                        <div id="Themes" class="tabcontent">
+                                            <h3>London</h3>
+                                            <p>London is the capital city of England.</p>
+                                        </div>
+
+                                        <div id="Options" class="tabcontent">
                                             <h3>Paris</h3>
                                             <p>Paris is the capital of France.</p> 
                                         </div>
 
-                                        <div id="Tokyo" class="tabcontent">
+                                        <div id="Delivery" class="tabcontent">
                                             <h3>Tokyo</h3>
                                             <p>Tokyo is the capital of Japan.</p>
                                         </div>
@@ -179,12 +197,12 @@
                                     <h6>Categories</h6>
                                 </div>
                                 <ul>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>Apprael</a></li>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>Awards</a></li>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>Bags</a></li>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>Drinkware</a></li>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>Fun</a></li>
-                                    <li><a href="blog.html"><i class="ti-angle-right"></i>HeadWear</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>Apprael</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>Awards</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>Bags</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>Drinkware</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>Fun</a></li>
+                                    <li><a href="#"><i class="ti-angle-right"></i>HeadWear</a></li>
                                     <li><button type="button" class="btn btn-success sh_button">Show More</button></li>
                                 </ul>
                             </div>
@@ -209,6 +227,81 @@
             </div>
         </div>
     </section>
+
+        <!-- Services -->
+        <section class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 mb-30">
+                    <!--<div class="section-subtitle">The experience</div>-->
+                    <div class="section-title1"><span>You may also like..</span></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="position-re o-hidden"> <img src="uploads/8693563.webp" alt=""> </div>
+                            <div class="con">
+                                <h5><a href="#">Maati<span>Baani</span></a> </h5>
+                                <div class="line"></div>
+                                <div class="row facilities">
+                                    <div class="col-md-12 text-right">
+                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="position-re o-hidden"> <img src="uploads/08.webp" alt=""> </div>
+                            <div class="con">
+                                <h5><a href="#"><span>Rashmeet</span> kaur</a></h5>
+                                <div class="line"></div>
+                                <div class="row facilities">
+                                    <div class="col-md-12 text-right">
+                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="position-re o-hidden"> <img src="uploads/8267803.webp" alt=""> </div>
+                            <div class="con">
+                                <h5><a href="#">Jeremy  <span>Olander</span></a> </h5>
+                                <div class="line"></div>
+                                <div class="row facilities">
+                                    <div class="col-md-12 text-right">
+                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="item">
+                            <div class="position-re o-hidden"> <img src="uploads/11375016.webp" alt=""> </div>
+                            <div class="con">
+                                <h5><a href="#">KOROLOVA <span></span></a></h5>
+                                <div class="line"></div>
+                                <div class="row facilities">
+                                    <div class="col-md-12 text-right">
+                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <?php include "footer.php" ?>
 
@@ -244,6 +337,13 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
         }
+
+
+        var myCarousel = document.querySelector('#myCarousel')
+        var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000,
+        wrap: false
+        })
     </script>   
    
 </body>

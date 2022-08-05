@@ -17,7 +17,7 @@
                     <!--</ul>-->
                 </li>
                 <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Cities</a></li>
+                <li class="nav-item"><a class="nav-link" href="cities.php">Cities</a></li>
                 <li class="nav-item"><a class="nav-link" href="artist.php">Artists</a></li>
                 <li class="nav-item dropdown"><a class="nav-link" href="#">Merchandise</a>
                     <ul class="dropdown-menu last">
