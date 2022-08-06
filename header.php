@@ -36,8 +36,9 @@
                 
                 </li>
                 <li class="nav-item"><a class="nav-link" href="help.php">Help</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><img src="uploads/avtar.jpg" alt=""></a></li>
+                <li class="nav-item"><button class="btn btn-outline-success nav-link" onclick="openPopup()" float="right">Sign In</button></li>
             </ul>
-            <button class="btn btn-success" float="right" style="color:black;">sign Up</button>
         </div>
     </div>
 </nav>

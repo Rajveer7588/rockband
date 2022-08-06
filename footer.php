@@ -1,3 +1,40 @@
+
+<div class="mycoontener">
+    <div class="mypopup_main" id="mypopup_main">
+    <button class="close_button" onclick="closePopup()">X</button>
+        <img src="uploads/avtar.jpg">
+        <div class="col-md-12 col-sm-12">
+           
+            <form action="" method="post">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control" value="" placeholder="info@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" value="" placeholder=".................">
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" value="Sign In" class="btn btn-success popup-button"> 
+                    <br>
+                    <div class="col-md-12 col-sm-12">
+                        <span>If you have not registered than <a href="">click here</a></span>
+                    </div>
+
+                  
+                </div>
+            </form>
+          
+        </div>
+       
+    </div>
+</div>
+
 <footer class="footer">
     <div class="footer-top">
         <div class="container">
@@ -55,3 +92,13 @@
         </div>
     </div>
 </footer>
+
+<script>
+let mymodelpopup = document.getElementById("mypopup_main");
+ function openPopup(){
+    mymodelpopup.classList.add("open-popup")
+ }
+ function closePopup(){
+    mymodelpopup.classList.remove("open-popup")
+ }
+</script>

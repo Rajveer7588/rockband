@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144098545-1"></script>
     <script>
@@ -111,7 +112,7 @@
         </div>
     </section> -->
     <!-- Footer -->
-    <?php include "footer.php" ?>
+    <?php include "footer.php"; ?>
     <!-- jQuery -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
@@ -129,5 +130,7 @@
     <script src="js/YouTubePopUp.js"></script>
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/custom.js"></script>
+
+   
 </body>
 </html>

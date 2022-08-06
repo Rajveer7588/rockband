@@ -6,3 +6,7 @@ https://duruthemes.com/demo/html/florya/index2.html
 git remote add origin https://github.com/Rajveer7588/Projeclist.git
 git branch -M main
 git push -u origin main
+
+==================Modal Box Link==================================
+https://w3schools.com/howto/howto_css_modals.asp
+====================================================================
