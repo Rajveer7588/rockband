@@ -5,7 +5,7 @@
         <img src="uploads/avtar.jpg">
         <div class="col-md-12 col-sm-12">
            
-            <form action="" method="post">
+            <form action="" method="post"> 
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <div class="form-group">
@@ -20,18 +20,89 @@
                             <input type="password" name="password" class="form-control" value="" placeholder=".................">
                         </div>
                     </div>
-                    <input type="submit" name="submit" value="Sign In" class="btn btn-success popup-button"> 
+
+                    <input type="submit" name="sign_in" value="Sign In" class="btn btn-success popup-button"> 
                     <br>
+
                     <div class="col-md-12 col-sm-12">
-                        <span>If you have not registered than <a href="">click here</a></span>
+                        <span>If you have not registered than <a onclick="show_reg()">click here</a></span>
                     </div>
 
-                  
                 </div>
             </form>
           
         </div>
        
+    </div>
+</div>
+
+<div class="reg_modal">
+    <div class="main_modal" id="main_modal">
+        <button class="close_button" onclick="closePopup()">X</button>
+        <img src="uploads/avtar.jpg">
+            <form action="" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="image">Image</label>
+                            <input type="file" name="image" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="phone">phone No</label>
+                            <input type="text" name="phone" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" class="form-control" value="" placeholder="info@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" class="form-control" value="" placeholder=".................">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="con_password">Confirm Password</label>
+                            <input type="password" name="con_password" class="form-control" value="" placeholder=".................">
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" class="form-control" value="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-12 col-xs-12">
+                    <input type="submit" name="sign_up" value="Sign Up" class="btn btn-success popup-button"> 
+                   </div>
+                    <br>
+                    <!-- <div class="col-md-12 col-sm-12">
+                        <span>If you have not registered than <a href="">click here</a></span>
+                    </div> -->
+                </div>
+            </form>
+        
     </div>
 </div>
 
@@ -85,7 +156,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="footer-bottom-inner">
-                        <p class="footer-bottom-copy-right">© Copyright 2022 by <a href="https://1.envato.market/DuruThemes" target="_blank">DuruThemes.com</a></p>
+                        <p class="footer-bottom-copy-right">© Copyright 2022 by <a href="https://www.websitesowner.com" target="_blank">WebsiteOwner</a></p>
                     </div>
                 </div>
             </div>
@@ -94,11 +165,19 @@
 </footer>
 
 <script>
-let mymodelpopup = document.getElementById("mypopup_main");
- function openPopup(){
-    mymodelpopup.classList.add("open-popup")
- }
- function closePopup(){
-    mymodelpopup.classList.remove("open-popup")
- }
+    let mymodelpopup = document.getElementById("mypopup_main");
+    let mainmodelpopup = document.getElementById("main_modal");
+    function openPopup(){
+        mymodelpopup.classList.add("open-popup")
+    }
+    function closePopup(){
+        mymodelpopup.classList.remove("open-popup");
+        mainmodelpopup.classList.remove("main-popup");
+    }
+
+    function show_reg(){
+        mainmodelpopup.classList.add("main-popup");
+        mymodelpopup.classList.remove("open-popup");
+
+    }
 </script>

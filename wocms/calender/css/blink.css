@@ -1,0 +1,38 @@
+.blink 
+{
+  animation: blink 3s steps(2, start) infinite;
+  -webkit-animation: blink 3s steps(2, start) infinite;
+}
+@keyframes blink 
+{
+  
+
+
+to 
+  { 
+      visibility: hidden;
+  }
+}
+@-webkit-keyframes blink   
+
+to 
+  { 
+      visibility: hidden; 
+  }
+}
+
+article
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fc745f;
+  text-align: center;
+}
+#cursor
+{
+  font-size: 20px;
+  font-weight:600;
+  color: #424bf4;
+  /* text-shadow: -2px 4px 1px rgba(0, 0, 0, 0.15); */
+}

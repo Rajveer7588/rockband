@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* CSS Document */
+@media (max-width: 1250px){
+#next-prev .rightButton {
+    float: right;
+    margin-top: 5px;
+    text-align: center;
+}
+.cal_details ul li {
+    width: 24%;
+}
+}
+@media (max-width: 1040px){
+.cal_details ul {
+    margin: 0;
+    padding: 0;
+}
+.cal_details ul li {
+    width: 23%;
+}
+}
+@media (max-width: 900px){
+.cal_details ul li {
+    margin: 3px;
+    width: 23%;
+    min-height: 35px;
+}
+}
+
+@media (max-width:768px){
+
+.skin-blue .main-header .navbar {
+
+background-color: #3e454c;
+
+border-top:1px solid #ccc;
+
+}
+
+.img_btn .btn-default {
+    border: 1px solid #333;
+    color: #333;
+    background: #ccc;
+    padding: 4px;
+    font-size: 13px;
+    width: 100%;
+}
+.meta {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.ui_button {
+    margin: 10px;
+    text-align: center;
+}
+}
+
+@media (max-width:540px){
+.cal_details ul li {
+    float: none;
+    margin: 5px auto 0;
+    min-height: auto;
+    text-align: center;
+    width: 50%;
+}
+}
+@media (max-width:380px){
+.cal_details ul li {
+    width: 80%;
+}
+.board {
+    margin: 0 auto !important;
+    width: 95% !important;
+}
+.tabl_1.col-md-6 , .tabl_2.col-md-6{
+    padding: 0 !important;
+    width: 100% !important;
+}
+}

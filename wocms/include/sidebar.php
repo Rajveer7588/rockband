@@ -1,0 +1,277 @@
+<?php include_once('include/functions.php');?>
+<?php $b =  $_SERVER['REQUEST_URI'];
+             $a = explode("/", $b);
+             $current = $a[3];
+?>
+  <?php
+  $admin_id = $_SESSION['admin_id'];
+    $fetch = mysqli_query($conn,"SELECT * FROM profile_details WHERE admin_id='".$admin_id."'");
+      $num = mysqli_num_rows($fetch);
+    while($show = mysqli_fetch_assoc($fetch))
+    {
+      $profile_img = $show['profile_img'];
+      $profile_name=$show['profile_name'];
+      $website_name=$show['website_name'];
+    }
+  ?>
+  <aside class="main-sidebar">
+
+        <section class="sidebar">
+          <div class="user-panel">
+            <div class="pull-left image">
+            <?php if(@$profile_img==""){ ?>
+              <img src="framework/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <?php }else{ ?>
+                <img src="../uploads/profile/<?php echo @$profile_img ?>" class="img-circle" alt="User Image">
+              <?php } ?>
+            </div>
+            <!-- <div class="pull-left info">
+              <p><?= $profile_name ?></p>
+              <i class="fa fa-circle text-success"></i> Online
+            </div> -->
+          </div>
+      
+          
+         
+          <ul class="sidebar-menu">
+            <?php if($current=='index.php'){ ?>
+              <li class="active">
+                <?php
+                  } else {
+                ?>
+              <li>
+                <?php 
+                } 
+                ?>
+                <a href="index.php">
+                  <i class="fa fa-tasks" aria-hidden="true"></i> 
+                  <span>Dashboard</span>
+                </a>
+              </li>
+
+              <?php
+                if($current=='slider.php'){ ?>
+                  <li class="active">
+                  <?php 
+                  } else { 
+                  ?>
+                  <li>
+                  <?php 
+                  } 
+                  ?>
+                  <a href="slider.php">
+                    <i class="fa fa-picture-o"></i> 
+                    <span>Home Page Banner</span>
+                  </a>
+                </li>
+
+              <?php 
+                if($current=='home.php'){
+                  ?>
+                  <li class="active">
+                  <?php 
+                    } else { 
+                  ?>
+                  <li>
+                  <?php 
+                  } 
+                  ?>
+                  <a href="home.php">
+                    <i class="fa fa-book"></i> 
+                    <span>Banner Content</span>
+                  </a>
+              </li>
+
+              <?php if($current=='about.php'){ ?>
+                <li class="active">
+                <?php } else { ?>
+                <li>
+                <?php } ?>
+                <a href="about.php">
+                  <i class="fa fa-book" aria-hidden="true"></i> 
+                  <span>About Owner</span>
+                </a>
+              </li>
+              
+            <!-- ============================  -->
+
+              <?php 
+                if($current=='add-service-details.php'){ 
+                ?>
+                <li class="active">
+                <?php 
+                  } else{ 
+                ?>
+                <li>
+                  <?php 
+                  } 
+                  ?>
+                  <a href="add-service-details.php">
+                    <i class="fa fa-star" aria-hidden="true"></i> 
+                    <span>Services</span>
+                  </a>
+              </li>
+<!-- ================================================= -->
+              <?php 
+                if($current=='add-fleet-details.php'){ 
+                ?>
+                <li class="active">
+                <?php 
+                } else{ 
+                    ?>
+                      <li>
+                    <?php 
+                    } 
+                  ?>
+                  <a href="add-fleet-details.php"><i class="fa fa-star" aria-hidden="true"></i> 
+                  <span>Fleet</span>
+                  </a>
+              </li>
+<!-- ========================================================  -->
+
+              <?php 
+                if($current=='add-city-details.php'){ 
+                ?>
+                <li class="active">
+                <?php 
+                } else{ 
+                    ?>
+                      <li>
+                    <?php 
+                    } 
+                  ?>
+                  <a href="add-city-details.php"><i class="fa fa-star" aria-hidden="true"></i> 
+                  <span>City</span>
+                  </a>
+              </li>
+<!-- ========================================================  -->
+              <?php 
+                if($current=='order_list.php'){ 
+                ?>
+                <li class="active">
+                <?php 
+                } else{ 
+                    ?>
+                      <li>
+                    <?php 
+                    } 
+                  ?>
+                  <a href="order_list.php"><i class="fa fa-book" aria-hidden="true"></i> 
+                  <span>Order Details</span>
+                  </a>
+              </li>
+
+              <?php if($current=='gallery.php'){ ?>
+            <li class="active">
+            <?php } else { ?>
+            <li>
+            <?php } ?>
+              <a href="gallery.php"><i class="fa fa-picture-o" aria-hidden="true"></i> 
+              <span>Gallery</span>
+              </a>
+            </li>
+
+              <?php if($current=='contact_details.php'){ ?>
+                <li class="active">
+                  <?php } else { ?>
+                <li>
+                  <?php } ?>
+                <a href="contact_details.php">
+                  <i class="fa fa-phone"></i> 
+                  <span>Contact</span>
+                </a>
+              </li>
+              
+              <?php if($current=='review.php'){ ?>
+              <li class="active">
+              <?php } else { ?>
+              <li>
+              <?php } ?>
+              <a href="review.php"><i class="fa fa-users"></i> 
+              <span>Reviews</span>
+              </a>
+              </li>
+              
+
+              <?php if($current=='privacy-and-policy.php'){ ?>
+              <li class="active">
+              <?php } else { ?>
+                <li>
+              <?php } ?>
+              <a href="privacy-and-policy.php"><i class="fa fa-book" aria-hidden="true"></i> 
+              <span>Privacy&Policy</span>
+              </a>
+              </li>
+              
+              
+              
+
+              <?php if($current=='add-faqs.php'){ ?>
+              <li class="active">
+              <?php } else { ?>
+                <li>
+              <?php } ?>
+              <a href="add-faqs.php"><i class="fa fa-book" aria-hidden="true"></i> 
+              <span>Faqs</span>
+              </a>
+              </li>
+
+              <?php if($current=='social_links.php'){ ?>
+              <li class="active">
+              <?php } else { ?>
+              <li>
+              <?php } ?>
+              <a href="social_links.php"><i class="fa fa-share-square-o" aria-hidden="true"></i></i> 
+              <span>Social Links</span>
+              </a>
+              </li>
+              
+              
+
+
+              <?php //if($current=='video-tour.php'){ ?>
+            <!--<li class="active">-->
+            <?php //} else { ?>
+            <!--li>-->
+            <?php// } ?>
+             <!--<a href="video-tour.php"><i class="fa fa-video-camera" aria-hidden="true"></i> -->
+             <!--<span>Video Tour</span>-->
+             <!--</a>-->
+             <!--</li>-->
+
+            <?php if(($current=='logo.php')||($current=='password.php')){ ?>
+              <li class="active">
+              <?php } else { ?>
+              <li>
+                <?php } ?>
+                  <a href="javascript:void(0)" data-toggle="collapse" data-target="#demo"><i class="fa fa-cog" aria-hidden="true"></i><span>Additional Features</span><i class="fa fa-angle-left pull-right"></i></a></li>
+              <div id="demo" class="collapse">
+                <ul class="sidebar-menu">
+
+                  <?php if($current=='logo.php'){ ?>
+                  <li class="active">
+                  <?php } else { ?>
+                  <li>
+                  <?php } ?>
+                  <a href="logo.php"><i class="fa fa-linux"></i> 
+                  <span>Logo</span>
+                  </a>
+                  </li>
+                  <?php if($current=='password.php'){ ?>
+                  <li class="active">
+                  <?php } else { ?>
+                  <li>
+                  <?php } ?>
+                  <a href="password.php"><i class="fa fa-key" aria-hidden="true"></i> 
+                  <span>Change Login Details</span>
+                  </a>
+                  </li>
+                </ul>
+              </div>
+
+           
+             
+          </ul>
+        </section>
+ 
+      </aside>

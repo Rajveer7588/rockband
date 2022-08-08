@@ -1,0 +1,10 @@
+<style>
+@media only screen and (max-width: 600px) {
+#pro_cal{
+height:1200px !important;
+}
+}
+</style>
+
+
+<iframe id="pro_cal" src="calender/calender.php?property=<?php echo $pro_id ;?>" frameborder="0" height="600px" width="100%"></iframe>
