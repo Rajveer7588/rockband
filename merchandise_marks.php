@@ -149,7 +149,7 @@
                                             </select>
                                         </div>
                                         <div class="row">
-                                        <div class="butn"><button class="btn btn-success form-buttton">Add To Cart</button> <button class="btn btn-success form-buttton">Buy Now</button></div>
+                                        <div class="butn"><button class="btn btn-success form-buttton">Add To Cart</button><button class="btn btn-success form-buttton">Buy Now</button></div>
                                         </div>
                                     </div>
                                 </form>

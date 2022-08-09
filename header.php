@@ -1,27 +1,30 @@
 <?php 
     include "wocms/include/functions.php"; 
+    session_start();
     if(isset($_POST['sign_in'])){
         $user_email = $_POST['email'];
-        
         $user_password = $_POST['password'];
+        if($user_email != null && $user_password != null){
 
-        $qry = "SELECT * FROM `user_login` WHERE email ='{$user_email}' AND password = '{$user_password}' AND status = 1";
+            $qry = "SELECT * FROM `user_login` WHERE email ='{$user_email}' AND password = '{$user_password}' AND status = 1";
         
-        $data = mysqli_query($conn, $qry);
+            $data = mysqli_query($conn, $qry);
+            
+            $row = mysqli_num_rows($data);
+            if($row > 0){
+                $result = mysqli_fetch_assoc($data);
+                $_SESSION["customer_login"] = $result;
+    
+            }
+            else{
+                ?>
+                    <script>
+                        alert("Sorry, Enter valid Email and Password");
+                    </script>
+                <?php
+            }
+        }
         
-        $row = mysqli_num_rows($data);
-        if($row > 0){
-            $result = mysqli_fetch_assoc($data);
-            $_SESSION["customer_login"] = $result;
-  
-        }
-        else{
-            ?>
-                <script>
-                    alert("Sorry, No record found");
-                </script>
-            <?php
-        }
     }
     
 
@@ -189,7 +192,7 @@
                 <?php
                     if(isset($_SESSION["customer_login"]["email"])){
                         ?>
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="uploads/user_logo/<?= $result['logo']; ?>" alt=""></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="uploads/user_logo/<?= $_SESSION["customer_login"]["logo"]; ?>" alt=""></a></li>
                         <?php
                     }
                     else{
