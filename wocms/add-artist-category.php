@@ -5,7 +5,7 @@
 	// echo "SELECT * FROM `category` WHERE id ='".$updated_id."' AND admin_id='".$admin_id."'";
 
 	if(!empty($updated_id)){
-		$fetch12 = mysqli_query($conn,"SELECT * FROM `fleet_category` WHERE id ='".$updated_id."' AND admin_id='".$admin_id."'");
+		$fetch12 = mysqli_query($conn,"SELECT * FROM `artist_category` WHERE id ='".$updated_id."' AND admin_id='".$admin_id."'");
 		@$num12 = mysqli_num_rows($fetch12);
 
 		$show12 = mysqli_fetch_assoc($fetch12);
@@ -64,7 +64,7 @@
 		<?php
 			//  echo "SELECT * FROM aid_listing WHERE admin_id='".$admin_id."' and property_id not in (7,15,8)";
 
-			$fetch11 = mysqli_query($conn,"SELECT * FROM `fleet_category` WHERE admin_id='".$admin_id."'");
+			$fetch11 = mysqli_query($conn,"SELECT * FROM `artist_category` WHERE admin_id='".$admin_id."'");
 			@$num11 = mysqli_num_rows($fetch11);
 			if($num11>0)
 			{
@@ -104,7 +104,7 @@
 								<form action="" method="post">
 								<td data-title="Delete" ><input type="hidden" name="delete_property" value="<?php echo @$id; ?>"><button type="submit" name="delete_pro_button" onClick="return check()"><i class="fa fa-trash"></i></button></td>
 								</form>
-								<form method="post" action="add-fleet-category.php?id=<?php echo $id; ?>">
+								<form method="post" action="add-artist-category.php?id=<?php echo $id; ?>">
 								<td data-title="Edit" ><input type="hidden" name="edit_aid" value="<?php echo @$id; ?>"><button type="submit" name="edi_aid_button"><i class="fa fa-pencil"></i></button></td>
 								</form>
 							</tr>
@@ -148,7 +148,7 @@ if(isset($_POST['submit']))
 	$size  = $_FILES['category_image']['size'];
 	$tmp_name  = $_FILES['category_image']['tmp_name'];
 
-	$target_dir = "../uploads/fleet_category/";
+	$target_dir = "../uploads/artist_category/";
 	if(isset($target_dir)){
 	@mkdir( $target_dir, 0755);
 	}
@@ -204,16 +204,16 @@ if(isset($_POST['submit']))
             // if your have needed image upload then you can remove this code inside comment
             if($updated_id == null && $updated_id == ""){
             
-                $insert = mysqli_query($conn,"INSERT into `fleet_category`(admin_id,heading, category_image,status,inserted_date,ip) VALUES('".$admin_id."','".$heading."', '".$image_name."', '".$pro_status."', now() ,'".$ip."')");
+                $insert = mysqli_query($conn,"INSERT into `artist_category`(admin_id,heading, category_image,status,inserted_date,ip) VALUES('".$admin_id."','".$heading."', '".$image_name."', '".$pro_status."', now() ,'".$ip."')");
 
-                // $insert = mysqli_query($conn,"INSERT into `fleet_category`(admin_id,heading, status,inserted_date,ip) VALUES('".$admin_id."','".$heading."', '".$pro_status."', now() ,'".$ip."')");
+                // $insert = mysqli_query($conn,"INSERT into `artist_category`(admin_id,heading, status,inserted_date,ip) VALUES('".$admin_id."','".$heading."', '".$pro_status."', now() ,'".$ip."')");
             
                 if($insert)
                 {
                     echo "<script>alert('Add Successfully.');</script>";
                     ?>
                     <script>
-                    window.location = 'add-fleet-category.php';
+                    window.location = 'add-artist-category.php';
                     </script>
                     <?php
                 }
@@ -231,13 +231,13 @@ if(isset($_POST['submit']))
                 $row = mysqli_fetch_assoc($select_data);
                 $image =$row['category_image'];
                 
-				unlink("../uploads/fleet_category/".$image);
+				unlink("../uploads/artist_category/".$image);
             }
          //========if need upload image then remove this bracket inside uncomment code 
        		else{
         //========
-			$insert = mysqli_query($conn, "UPDATE `fleet_category` SET `admin_id`='$admin_id',`heading`='".$heading."', `category_image`='".$image_name."', `inserted_date`= now(),`ip`='".$ip."' WHERE `id`='$updated_id' AND `admin_id`='$admin_id' ");
-			// $insert = mysqli_query($conn, "UPDATE `fleet_category` SET `admin_id`='$admin_id',`heading`='".$heading."', `inserted_date`= now(),`ip`='".$ip."' WHERE `id`='$updated_id' AND `admin_id`='$admin_id' ");
+			$insert = mysqli_query($conn, "UPDATE `artist_category` SET `admin_id`='$admin_id',`heading`='".$heading."', `category_image`='".$image_name."', `inserted_date`= now(),`ip`='".$ip."' WHERE `id`='$updated_id' AND `admin_id`='$admin_id' ");
+			// $insert = mysqli_query($conn, "UPDATE `artist_category` SET `admin_id`='$admin_id',`heading`='".$heading."', `inserted_date`= now(),`ip`='".$ip."' WHERE `id`='$updated_id' AND `admin_id`='$admin_id' ");
 				if($insert)
 				{
 					echo "<script>alert('Updated Successfully.');</script>";
@@ -263,7 +263,7 @@ if(isset($_POST['delete_pro_button']))
 	$delete_id = $_POST['delete_property'];
 	$admin_id = $_SESSION['admin_id'];
 	
-	$delete = mysqli_query($conn, "DELETE FROM `fleet_category` WHERE id = '".$delete_id."' AND admin_id=$admin_id");
+	$delete = mysqli_query($conn, "DELETE FROM `artist_category` WHERE id = '".$delete_id."' AND admin_id=$admin_id");
 	if($delete)
 		{
 			echo "<script>alert('Deleted Successfully.');</script>";

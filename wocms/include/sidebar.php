@@ -113,7 +113,7 @@
               </li>
 <!-- ================================================= -->
               <?php 
-                if($current=='add-fleet-details.php'){ 
+                if($current=='add-artist-details.php'){ 
                 ?>
                 <li class="active">
                 <?php 
@@ -123,8 +123,8 @@
                     <?php 
                     } 
                   ?>
-                  <a href="add-fleet-details.php"><i class="fa fa-star" aria-hidden="true"></i> 
-                  <span>Fleet</span>
+                  <a href="add-artist-details.php"><i class="fa fa-star" aria-hidden="true"></i> 
+                  <span>Artist</span>
                   </a>
               </li>
 <!-- ========================================================  -->
@@ -161,7 +161,7 @@
                   </a>
               </li>
 
-              <?php if($current=='gallery.php'){ ?>
+            <?php if($current=='gallery.php'){ ?>
             <li class="active">
             <?php } else { ?>
             <li>

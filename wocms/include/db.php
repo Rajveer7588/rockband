@@ -37,5 +37,5 @@ else
 {
 define("SITE_URL", 'http://'.$_SERVER['SERVER_NAME'].'/');
 }
-$hostname = "http://localhost/limosine/";
+$hostname = "http://localhost/rockband/";
 ?>

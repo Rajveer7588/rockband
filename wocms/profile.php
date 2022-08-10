@@ -106,7 +106,7 @@ if(isset($_POST['profile_submit']))
 	
 	$ip = getClientIP();
 	$target_dir = '../uploads/profile/';
-	if (!file_exists($target_dir)) {
+	if (!file_exists($target_dir)){
     mkdir($target_dir, 0777, true);
 	}
 	$target_file = $target_dir . basename($_FILES["image"]["name"]);
@@ -127,7 +127,7 @@ if(isset($_POST['profile_submit']))
 
                 $insert = mysqli_query($conn,"SELECT * FROM profile_details WHERE admin_id=$admin_id");
                 $row = mysqli_num_rows($insert);
-            	if($row==0)
+            	if($row == 0)
             	{
             		$insert = mysqli_query($conn,"INSERT into profile_details(admin_id,profile_img,profile_name,website_name,profile_inst_date,profile_ip) VALUES('".$admin_id."','".$name."','".$profile_name."','".$website_name."', now() ,'".$ip."')");
             		move_uploaded_file($_FILES['image']['tmp_name'],$target_dir.$name);	
@@ -143,12 +143,16 @@ if(isset($_POST['profile_submit']))
             		while($loop = mysqli_fetch_assoc($insert))
             		{
             			$del_file = $loop['profile_img'];
+
             			if($name == "" )
             			{
             				$name = $loop['profile_img'];
             			}
+						else{
+							unlink($target_dir.$del_file);
+						}
             			$update = mysqli_query($conn,"UPDATE profile_details SET profile_img='".$name."' , profile_name='".$profile_name."', website_name='".$website_name."', profile_update_date=now(), profile_ip='".$ip."' WHERE profile_id='".$loop['profile_id']."' AND admin_id='".$admin_id."'") or (mysqli_error($conn));
-            		 move_uploaded_file($_FILES['image']['tmp_name'],$target_dir.$name);
+            		 	move_uploaded_file($_FILES['image']['tmp_name'],$target_dir.$name);
             		 
             		}
             		if($update==true)

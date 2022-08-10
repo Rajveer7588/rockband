@@ -20,7 +20,7 @@
                     <form action="" method="post">
                         <table>
                             <thead>
-                            <tr>
+                            <tr class="tbl_tr">
                                 <th scope="col">Image</th>
                                 <th scope="col">Product Name</th>
                                 <th scope="col">Quantiy</th>
@@ -29,14 +29,14 @@
                             </tr>
                             </thead>
                             <tbody>
-                            <tr>
+                            <tr class="tbl_tr">
                                 <td data-label="Image"><img src="uploads/avtar.jpg" alt="cart"></td>
                                 <td data-label="Product Name">T-shirts</td>
                                 <td data-label="Quantity" class="qty_row"><button class="btn btn-success sub_btn" type="button">-</button><input type="text" name="quantity" class="qty" value="8" readonly><button class="btn btn-success add_btn" type="button">+</button></td>
                                 <td data-label="Rates">$300</td>
                                 <td data-label=""><button type="button" class="btn btn-danger">Remove</button></td>
                             </tr>
-                            <tr>
+                            <tr class="tbl_tr">
                                 <td colspan="3"></td>
                                 <td colspan="2" class="order_rate">
                                     <h4>Order Summery</h4>

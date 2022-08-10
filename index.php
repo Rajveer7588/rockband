@@ -46,7 +46,7 @@
                 <div class="col-md-6 offset-md-1 mt-30 animate-box" data-animate-effect="fadeInUp">
                     <p>Nullam vestibulum iaculis maximus. In facilisis leo at leo convallis, ac tristique nunc vulputate. Maecenas volutpat molestie purus eu tempus. Mauris daisen aliquet augue, id aliquam enim faucibus aucton.</p>
                     <p>Maecenas volutpat molestie purus eu tempus. Mauris dapibus aliquet augue, id aliquam enim faucibus auctor. Vestibulum eget dui quis tortor mollis tempor quis non turpis. Donec eget semper neque. In aliquam tristique consectetur. Etiam venenatis lobortis neque, eget sollicitudin erat venenatis sit amet. In interdum odio at nunc pulvinar viverra rutrum id est.</p>
-                    <div class="butn-light mt-15"> <a href="#"><span>Find out more</span></a> </div>
+                    <div class="butn-light mt-15"> <a href="artist.php"><span>Find out more</span></a> </div>
                 </div>
             </div>
         </div>
@@ -73,34 +73,12 @@
                                 <div class="line"></div>
                                 <div class="row facilities">
                                     <div class="col-md-12 text-right">
-                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                        <div class="permalink"><a href="live-stream.php">Explore <i class="ti-arrow-right"></i></a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                            <!--<div class="item">
-                                <div class="position-re o-hidden"> <img src="uplaods/01.webp" alt=""> </div>
-                                <div class="con">
-                                    <h5><a href="#"><span>Sufi</span></a> </h5>
-                                    <div class="line"></div>
-                                    <div class="row facilities">
-                                        <div class="col-md-12 text-right">
-                                            <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="position-re o-hidden"> <img src="uploads/01.webp" alt="">
-                                    <h5><a href="#"> <span>Sadho</span></a> </h5>
-                                    <div class="line"></div>
-                                    <div class="row facilities">
-                                        <div class="col-md-12 text-right">
-                                            <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
+                         
                         <div class="item">
                             <div class="position-re o-hidden"> <img src="uploads/08.webp" alt=""> </div>
                             <div class="con">
@@ -108,7 +86,7 @@
                                 <div class="line"></div>
                                 <div class="row facilities">
                                     <div class="col-md-12 text-right">
-                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                        <div class="permalink"><a href="live-stream.php">Explore <i class="ti-arrow-right"></i></a></div>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +98,7 @@
                                 <div class="line"></div>
                                 <div class="row facilities">
                                     <div class="col-md-12 text-right">
-                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                        <div class="permalink"><a href="live-stream.php">Explore <i class="ti-arrow-right"></i></a></div>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +110,7 @@
                                 <div class="line"></div>
                                 <div class="row facilities">
                                     <div class="col-md-12 text-right">
-                                        <div class="permalink"><a href="#">Explore <i class="ti-arrow-right"></i></a></div>
+                                        <div class="permalink"><a href="live-stream.php">Explore <i class="ti-arrow-right"></i></a></div>
                                     </div>
                                 </div>
                             </div>
